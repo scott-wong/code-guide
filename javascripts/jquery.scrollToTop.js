@@ -6,7 +6,7 @@
 (function($) {
     $.fn.scrollToTop = function(options) {
         var config = {
-            "speed" : 800
+            "speed" : 400
         };
 
         if (options) {
@@ -30,7 +30,7 @@
             $this.click(function(e) {
                 e.preventDefault();
                 $("body, html").animate({
-                    scrollTop : 0
+                    scrollTop : 600
                 }, config.speed);
             });
 
