@@ -64,8 +64,9 @@ layout: default
             <li><a href="#js-literal-value-object">Object Literals</a></li>
             <li><a href="#js-literal-value-array">Array Literals</a></li>
             <li><a href="#js-comments-single-line">单行注释</a></li>
-            <li><a href="#js-comments-multiline">单行注释</a></li>
+            <li><a href="#js-comments-multiline">多行注释</a></li>
             <li><a href="#js-comments-documentation">文档注释</a></li>
+            <li><a href="#js-brace">括号对齐</a></li>
         </ul>
     </div>
 </div>
@@ -624,4 +625,28 @@ layout: default
     <div class="col">
         {% highlight javascript %}{% include javascripts/js-comments-documentation.js %}{% endhighlight %}
     </div>
+</div>
+
+<div class="section" id="js-brace">
+    <div class="col">
+        <h3>括号对齐</h3>
+        <ul>
+            <li>标准示例 括号前后有空格， 花括号起始 不另换行，结尾新起一行</li>
+            <li>花括号必须要， 即使内容只有一行， 决不允许右边第二种情况</li>
+            <li>涉及 if for while do...while try...catch...finally 的地方都必须使用花括号</li>
+        </ul>
+    </div>
+    <div class="col">
+        {% highlight javascript %}{% include javascripts/js-brace.js %}{% endhighlight %}
+    </div>
+</div>
+
+<div class="section" id="js-if-else">
+    <div class="col">
+        <h3>if else else前后留有空格</h3>
+        <div class="col">
+            {% highlight javascript %}{% include javascripts/js-if-else.js %}{% endhighlight %}
+        </div>
+    </div>
+
 </div>
