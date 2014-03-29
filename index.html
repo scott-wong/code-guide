@@ -57,7 +57,12 @@ layout: default
         <h4><a href="#javascript">JavaScript</a></h4>
         <ul>
             <li><a href="#js-indentation">Indentation,分号,单行长度</a></li>
-            <li><a href="#js-">Indentation Levels</a></li>
+            <li><a href="#js-variable-namings">变量命名</a></li>
+            <li><a href="#js-literal-values-string">字符常量</a></li>
+            <li><a href="#js-literal-values-null">null使用场景</a></li>
+            <li><a href="#js-literal-values-undefined">undefined使用场景</a></li>
+            <li><a href="#js-literal-values-object">Object Literals</a></li>
+            <li><a href="#js-literal-values-array">Array Literals</a></li>
         </ul>
     </div>
 </div>
@@ -480,7 +485,88 @@ layout: default
         </ul>
     </div>
     <div class="col">
-        {% highlight javascript %}{% include javascripts/js-indentation-1.js %}{% endhighlight %}
-        {% highlight javascript %}{% include javascripts/js-indentation-2.js %}{% endhighlight %}
+        {% highlight javascript %}{% include javascripts/js-indentation.js %}{% endhighlight %}
+    </div>
+</div>
+
+<div class="section" id="js-blank-lines">
+    <div class="col">
+        <h3>空行</h3>
+        <ul>
+            <li>方法之间加</li>
+            <li>单行或多行注释前加</li>
+            <li>逻辑块之间加空行增加可读性</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="js-variable-naming">
+    <div class="col">
+        <h3>变量命名</h3>
+        <ul>
+            <li>标准变量采用驼峰标识</li>
+            <li>使用的ID的地方一定全大写</li>
+            <li>涉及Android的，一律大写第一个字母</li>
+            <li>涉及iOS的，一律小写第一个，大写后两个字母</li>
+            <li>常量采用大写字母，下划线连接的方式</li>
+            <li>构造函数，大写第一个字母</li>
+        </ul>
+    </div>
+    <div class="col">
+        {% highlight javascript %}{% include javascripts/js-variable-naming.js %}{% endhighlight %}
+    </div>
+</div>
+
+<div class="section" id="js-literal-value-string">
+    <div class="col">
+        <h3>字符常量</h3>
+        <ul>
+            <li>string 使用 ""</li>
+            <li>charater 使用 ''</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="js-literal-value-null">
+    <div class="col">
+        <h3>null的使用场景</h3>
+        <ul>
+            <li>To initialize a variable that may later be assigned an object value</li>
+            <li>To compare against an initialized variable that may or may not have an object value</li>
+            <li>To pass into a function where an object is expected</li>
+            <li>To return from a function where an object is expected</li>
+        </ul>
+        <h3>不适合null的使用场景</h3>
+        <ul>
+            <li>Do not use null to test whether an argument was supplied</li>
+            <li>Do not test an uninitialized variable for the value null</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section" id="js-literal-value-undefined">
+    <div class="col">
+        <h3>undefined使用场景</h3>
+        <ul>
+            <li>永远不要直接使用undefined进行变量判断</li>
+            <li>使用字符串 "undefined" 对变量进行判断</li>
+        </ul>
+    </div>
+    <div class="col">
+        {% highlight javascript %}{% include javascripts/js-literal-value-undefined.js %}{% endhighlight %}
+    </div>
+</div>
+
+<div class="section" id="js-literal-value-object">
+    <div class="col">
+        <h3>Object Literals</h3>
+        {% highlight javascript %}{% include javascripts/js-literal-value-object.js %}{% endhighlight %}
+    </div>
+</div>
+
+<div class="section" id="js-literal-value-array">
+    <div class="col">
+        <h3>Array Literals</h3>
+        {% highlight javascript %}{% include javascripts/js-literal-value-array.js %}{% endhighlight %}
     </div>
 </div>
