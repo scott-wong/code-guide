@@ -1,7 +1,9 @@
 name:          FE Code Guide for eKing
 description:   Standards for developing flexible, durable, and sustainable HTML and CSS, and maintainable JavaScript
-url:           http://scott-wong.github.io/code-guide/
+url:           http://wangyu.in/code-guide/
 
 markdown:      rdiscount
 permalink:     pretty
 pygments:      true
+
+twitterid:	   wyuleo
