@@ -1,5 +1,5 @@
 if (condition) {
-    doSomething();
+    doSomething()
 } else {
-    doSomethingElse();
+    doSomethingElse()
 }

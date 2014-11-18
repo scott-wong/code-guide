@@ -8,7 +8,7 @@ var doSomething = function (item) {
 
 
 // Good
-doSomething(item);
+doSomething(item)
 
 // Bad: Looks like a block statement
 doSomething (item);
@@ -21,11 +21,11 @@ var value = (function() {
     return {
         message: "Hi"
     }
-}());
+}())
 
 
 // Good
-(function() {
+;(function() {
     "use strict";
 
     function doSomething() {
@@ -36,5 +36,5 @@ var value = (function() {
         // code
     }
 
-})();
+})()
 

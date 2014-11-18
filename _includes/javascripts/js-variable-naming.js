@@ -1,12 +1,12 @@
-var thisIsMyName;
+var thisIsMyName
 
-var goodID;
+var goodID
 
-var AndroidVersion;
+var AndroidVersion
 
-var iOSVersion;
+var iOSVersion
 
-var MAX_COUNT = 10;
+var MAX_COUNT = 10
 
 function Person(name) {
     this.name = name

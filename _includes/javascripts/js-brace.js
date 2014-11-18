@@ -1,6 +1,6 @@
 // Good
 if (condition) {
-    doSomething();
+    doSomething()
 }
 
 if (condition)

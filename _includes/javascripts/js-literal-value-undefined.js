@@ -1,6 +1,6 @@
 // Bad
-var person;
-console.log(person === undefined);    //true
+var person
+console.log(person === undefined)    //true
 
 // Good
-console.log(typeof person);    // "undefined"
+console.log(typeof person)    // "undefined"
