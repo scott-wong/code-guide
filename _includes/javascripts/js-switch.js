@@ -1,11 +1,11 @@
 switch (condition) {
     case "first":
         // code
-        break;
+        break
 
     case "third":
         // code
-        break;
+        break
 
     default:
     // code
@@ -18,7 +18,7 @@ switch (condition) {
     case "first":
     case "second":
         // code
-        break;
+        break
 
     case "third":
     // code
@@ -31,11 +31,11 @@ switch (condition) {
 switch(condition) {
     case "first":
         // code
-        break;
+        break
 
     case "second":
         // code
-        break;
+        break
 
     // no default
 }
