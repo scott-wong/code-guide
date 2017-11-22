@@ -1,9 +1,10 @@
-name:          FE Code Guide for eKing
+name:          FE Code Guide for HNA
 description:   Standards for developing flexible, durable, and sustainable HTML and CSS, and maintainable JavaScript
-url:           http://wangyu.in/code-guide/
+url:           http://scottwang.me/code-guide/
 
 markdown:      rdiscount
 permalink:     pretty
 pygments:      true
+highlighter:   rouge
 
 twitterid:	   wyuleo
